@@ -59,9 +59,11 @@ export default function CartContextProvider(props) {
   const [numOfCartItems, setNumOfCartItems] = useState(null);
 
   function onlinePayment(shippingAddress) {
+    const appurl = process.env.REACT_APP_URL;
+    
     return axios
       .post(
-        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=http://localhost:3000`,
+        `https://ecommerce.routemisr.com/api/v1/orders/checkout-session/${cartId}?url=${appurl}`,
         {
           shippingAddress,
         },
