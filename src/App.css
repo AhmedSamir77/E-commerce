@@ -53,6 +53,23 @@ a:hover {
   background-color: var(--lightBgColor) !important;
 }
 
-.main-btn{
+.main-btn {
   background-color: var(--bgColor);
+}
+
+.lastP {
+  border-top: 0.5px solid rgba(128, 128, 128, 0.2);
+  border-bottom: 0.5px solid rgba(128, 128, 128, 0.2);
+  padding: 10px;
+}
+
+.imgCust {
+  width: 10%;
+  cursor: pointer;
+  margin-left: 5px;
+  border-radius: 20px;
+}
+
+.fontos {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
