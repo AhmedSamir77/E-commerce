@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios, { Axios } from "axios";
 import { Link, useNavigate } from "react-router-dom";
-import { Audio } from "react-loader-spinner";
+import { Audio, FallingLines, MutatingDots } from "react-loader-spinner";
 import { UserContext } from "../../Context/UserContext";
 
 export default function Login() {
@@ -107,14 +107,12 @@ export default function Login() {
             className="btn bg-main"
           >
             {loader ? (
-              <Audio
-                height="50"
+              <FallingLines
+                color="#ffffff"
                 width="50"
-                color="#fff"
-                ariaLabel="audio-loading"
-                wrapperStyle={{}}
-                wrapperClass="wrapper-class"
+                height="50"
                 visible={true}
+                ariaLabel="falling-circles-loading"
               />
             ) : (
               "Submit"

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./ResetPassword.module.css";
-import { Audio } from "react-loader-spinner";
+import { Audio, FallingLines } from "react-loader-spinner";
 
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -128,14 +128,12 @@ export default function ResetPassword() {
                 className="btn bg-main"
               >
                 {emailLoad ? (
-                  <Audio
-                    height="50"
+                  <FallingLines
+                    color="#ffffff"
                     width="50"
-                    color="#fff"
-                    ariaLabel="audio-loading"
-                    wrapperStyle={{}}
-                    wrapperClass="wrapper-class"
+                    height="50"
                     visible={true}
+                    ariaLabel="falling-circles-loading"
                   />
                 ) : (
                   "Submit"
@@ -179,14 +177,12 @@ export default function ResetPassword() {
                   className="btn bg-main"
                 >
                   {codeLoad ? (
-                    <Audio
-                      height="50"
+                    <FallingLines
+                      color="#ffffff"
                       width="50"
-                      color="#fff"
-                      ariaLabel="audio-loading"
-                      wrapperStyle={{}}
-                      wrapperClass="wrapper-class"
+                      height="50"
                       visible={true}
+                      ariaLabel="falling-circles-loading"
                     />
                   ) : (
                     "Submit"
@@ -250,14 +246,12 @@ export default function ResetPassword() {
                 className="btn bg-main"
               >
                 {resetLoad ? (
-                  <Audio
-                    height="50"
+                  <FallingLines
+                    color="#ffffff"
                     width="50"
-                    color="#fff"
-                    ariaLabel="audio-loading"
-                    wrapperStyle={{}}
-                    wrapperClass="wrapper-class"
+                    height="50"
                     visible={true}
+                    ariaLabel="falling-circles-loading"
                   />
                 ) : (
                   "Submit"

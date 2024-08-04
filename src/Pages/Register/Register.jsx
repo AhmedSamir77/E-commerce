@@ -4,7 +4,7 @@ import { useFormik } from "formik";
 import * as Yup from "yup";
 import axios, { Axios } from "axios";
 import { useNavigate } from "react-router-dom";
-import { Audio } from "react-loader-spinner";
+import { Audio, FallingLines } from "react-loader-spinner";
 
 export default function Register() {
   const [loader, setLoader] = useState(false);
@@ -215,14 +215,12 @@ export default function Register() {
           className="btn bg-main"
         >
           {loader ? (
-            <Audio
-              height="50"
+            <FallingLines
+              color="#ffffff"
               width="50"
-              color="#fff"
-              ariaLabel="audio-loading"
-              wrapperStyle={{}}
-              wrapperClass="wrapper-class"
+              height="50"
               visible={true}
+              ariaLabel="falling-circles-loading"
             />
           ) : (
             "Submit"
